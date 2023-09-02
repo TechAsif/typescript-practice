@@ -10,3 +10,18 @@ noDeninedType = "asdf";
 let userName = "Muhammad Abdur Rahman";
 const mulitply = (a, b) => a * b;
 console.log(`The multiply of 9 and 9 is: ${mulitply(9, 9)}`);
+console.log("2 September");
+let demoUnitonForNormalVariable;
+demoUnitonForNormalVariable = 10;
+demoUnitonForNormalVariable = "3";
+// demoUnitonForNormalVariable = true
+let unionArray;
+let unionArray2;
+unionArray = 10;
+// unionArray = [10];
+unionArray2 = ["f", "2"];
+unionArray2 = [10, 20];
+console.log(unionArray2);
+let arrayTest = [];
+arrayTest.push("asdfsad");
+console.log(arrayTest);
