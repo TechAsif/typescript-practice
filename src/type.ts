@@ -34,3 +34,23 @@ console.log(unionArray2);
 let arrayTest: string[]=[];
 arrayTest.push("asdfsad");
 console.log(arrayTest)
+
+console.log('----------- 4 Sep 2023 ----------');
+
+let anyTypeObj: {name?: string} = {};
+// anyTypeObj["name"] = "10"; 
+console.log(anyTypeObj.name)
+let funType: Function;
+ funType = (a:number):number | string => {
+    return "true";
+}
+// funType = "fghfg"
+
+console.log("5 sep 2023");
+
+let userType: User;
+userType = {
+    name: "Asif",
+    id: 10
+}
+console.log(userType)

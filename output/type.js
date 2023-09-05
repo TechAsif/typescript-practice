@@ -25,3 +25,19 @@ console.log(unionArray2);
 let arrayTest = [];
 arrayTest.push("asdfsad");
 console.log(arrayTest);
+console.log('----------- 4 Sep 2023 ----------');
+let anyTypeObj = {};
+// anyTypeObj["name"] = "10"; 
+console.log(anyTypeObj.name);
+let funType;
+funType = (a) => {
+    return "true";
+};
+// funType = "fghfg"
+console.log("5 sep 2023");
+let userType;
+userType = {
+    name: "Asif",
+    id: 10
+};
+console.log(userType);
