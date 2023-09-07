@@ -1,4 +1,4 @@
-"use strict";
+import { Player } from "./classes/Player.js";
 let profileName;
 let noDeninedType;
 let users = [10, 20, "sdf"];
@@ -41,3 +41,24 @@ userType = {
     id: 10
 };
 console.log(userType);
+console.log("6 Sep 2023");
+let add;
+add = (x, y) => {
+    console.log("Not Call this function");
+    return x + y;
+};
+add = function (a, b) {
+    console.log("Call From Here");
+    return a + b;
+};
+console.log(add(10, 20));
+let usersDetails;
+usersDetails = (x, y, z) => {
+    return z.name;
+};
+console.log(usersDetails(10, 20, { id: '1', name: "Asif" }));
+const sakib = new Player("Sakib", 38, "Bangladesh");
+const mash = new Player('Mash', 40, "Bangladesh");
+console.log(sakib.play());
+console.log(mash.play());
+console.log("7 Sep 2023");
