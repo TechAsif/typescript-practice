@@ -57,8 +57,32 @@ usersDetails = (x, y, z) => {
     return z.name;
 };
 console.log(usersDetails(10, 20, { id: '1', name: "Asif" }));
-const sakib = new Player("Sakib", 38, "Bangladesh");
-const mash = new Player('Mash', 40, "Bangladesh");
+const sakib = new Player("Sakib", 38, "Bangladesh", "dfs");
+const mash = new Player('Mash', 40, "Bangladesh", "dfsdf");
 console.log(sakib.play());
 console.log(mash.play());
 console.log("7 Sep 2023");
+console.log("10 Sep 2023");
+const players = [];
+players.push(sakib);
+players.push(mash);
+console.log(...players);
+console.log("11 sep 2023");
+const addId = (obj) => {
+    const id = 10;
+    return Object.assign(Object.assign({}, obj), { id });
+};
+const genericUser = addId({
+    name: "asif"
+});
+console.log(genericUser.name);
+console.log(genericUser.id);
+const apiResponseData = {
+    status: 200,
+    data: {
+        name: "asif",
+        email: "asif26.baust@gmail.com"
+    }
+};
+console.log(apiResponseData.data.email);
+console.log(apiResponseData.data.name);
