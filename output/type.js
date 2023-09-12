@@ -77,8 +77,14 @@ const genericUser = addId({
 });
 console.log(genericUser.name);
 console.log(genericUser.id);
+var RType;
+(function (RType) {
+    RType[RType["SUCCESS"] = 0] = "SUCCESS";
+    RType[RType["FAILURE"] = 1] = "FAILURE";
+    RType[RType["UNAUTHENTICATE"] = 2] = "UNAUTHENTICATE";
+})(RType || (RType = {}));
 const apiResponseData = {
-    status: 200,
+    status: RType.SUCCESS,
     data: {
         name: "asif",
         email: "asif26.baust@gmail.com"
@@ -86,3 +92,7 @@ const apiResponseData = {
 };
 console.log(apiResponseData.data.email);
 console.log(apiResponseData.data.name);
+console.log(apiResponseData.status);
+let touple = [10, "dsfasd"];
+touple[0] = 20;
+console.log(touple);

@@ -118,8 +118,14 @@ const genericUser = addId({
 console.log(genericUser.name);
 console.log(genericUser.id)
 
+enum RType {
+    SUCCESS,
+    FAILURE,
+    UNAUTHENTICATE
+}
+
 interface ApiResponse<T>{
-    status: number;
+    status: RType
     data: T
 }
 
@@ -127,7 +133,7 @@ const apiResponseData: ApiResponse<{
     name: string,
     email: string
 }> = {
-    status: 200,
+    status: RType.SUCCESS,
     data: {
         name: "asif",
         email: "asif26.baust@gmail.com"
@@ -137,6 +143,14 @@ const apiResponseData: ApiResponse<{
 
 console.log(apiResponseData.data.email)
 console.log(apiResponseData.data.name)
+console.log(apiResponseData.status)
+
+let touple: [number, string] = [10, "dsfasd"];
+touple[0]= 20;
+console.log(touple)
+
+
+
 
 
 
